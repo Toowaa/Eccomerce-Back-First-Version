@@ -1,6 +1,7 @@
 package com.example.demo.Services;
 
-import java.util.ArrayList;
+
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,8 @@ public class DatosEmpresaService {
     @Autowired
     IDatosEmpresaRepository datosEmpresaRepository;
 
-    public ArrayList<DatosEmpresaModel> getDatos(){
-        return (ArrayList<DatosEmpresaModel>)datosEmpresaRepository.findAll();
+    public List<DatosEmpresaModel> getDatos(){
+        return datosEmpresaRepository.findAll();
     }
 
     public Optional<DatosEmpresaModel> getById(Long id){

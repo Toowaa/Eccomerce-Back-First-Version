@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class DatoEmpresaController {
     DatosEmpresaService datosEmpresaService;
 
     @GetMapping 
-    public ArrayList<DatosEmpresaModel> getDatos(){
+    public List<DatosEmpresaModel> getDatos(){
         return datosEmpresaService.getDatos();
     }
 
